@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobileStyle.css" media="(max-device-width:450px)">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./cloud.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Macondo&family=Poppins:wght@500;600;700&family=Roboto:ital,wght@0,400;1,300&family=Work+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6b896963d9.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- should be responsive
+how to call labraiy in JS 
+.json
+axios     axios-http.com
+    -->
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <h1>Weather App</h1>
+    </nav>
+    <div class="body_padding_div">
+
+        <form onsubmit="getWeather(); return false" class="formm">
+            <input type="text" id="city" placeholder="Enter your city name">
+        </form>
+        <div class="main_container">
+          <h1 id="res"></h1>     
+        </div>
+       
+        </div>
+    </div>
+
+    <footer>
+        <h3>Developed By Noman</h3>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
